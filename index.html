@@ -149,8 +149,9 @@ alert('s' + pSiteID);
 
 //console.log("p" + pP12 + "p");
 if (1 == 1 ) { ///Called without P12 parameter
-		alert('gonna set center');
-		map.setCenter({lat: 'pP12', lng: 'pSiteID'});
+		var latlng = new google.maps.LatLng(pP12,pSiteID);
+
+		map.setCenter(latlng);
 		new google.maps.Marker({position: {lat: -34, lng: 151}, map: map}); 
 }
 	else  {
