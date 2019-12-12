@@ -124,8 +124,8 @@ map = new google.maps.Map(document.getElementById('map_canvas'), {
 map.setTilt(0);
 
 // Get URL parameter
-pP12 = getAllUrlParams().p;
-pSiteID = getAllUrlParams().s;
+pP12 = parseFloat(getAllUrlParams().p);
+pSiteID = parseFloat(getAllUrlParams().s);
 pSiteDesc = decodeURIComponent(getAllUrlParams().d);
 
 alert('p'+ pP12);
