@@ -146,8 +146,8 @@ pSiteDesc = decodeURIComponent(getAllUrlParams().d);
 	
 
 //console.log("p" + pP12 + "p");
-if (1 == 1  || pP12 == 'undefined' || pP12 == '' ) { ///Called without P12 parameter
-alert('gonna set center');
+if (1 == 1 ) { ///Called without P12 parameter
+		alert('gonna set center');
 		map.setCenter({lat: -34, lng: 151});
 		new google.maps.Marker({position: {lat: -34, lng: 151}, map: map}); 
 }
