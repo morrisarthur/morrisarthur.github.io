@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-<Placemark><name>380430295402</name><Polygon><outerBoundaryIs><LinearRing><coordinates>-122.341974,48.757641,0.0 -122.34471,48.757664,0.0 -122.344709,48.757441,0.0 -122.344709,48.75673,0.0 -122.341906,48.756717,0.0 -122.341974,48.757492,0.0 -122.341974,48.757641,0.0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark> 
-<Placemark><name>380430295433</name><Polygon><outerBoundaryIs><LinearRing><coordinates>-122.341974,48.757641,0.0 -122.341974,48.758571,0.0 -122.344712,48.758576,0.0 -122.344712,48.758457,0.0 -122.34471,48.757664,0.0 -122.341974,48.757641,0.0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark> 
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Temp.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaaff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaaff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>380430295402</name>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-122.341974,48.757641,0 -122.341974,48.758571,0 -122.344712,48.758576,0 -122.344712,48.758457,0 -122.34471,48.757664,0 -122.341974,48.757641,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+			<Placemark><name>380430295433</name></Placemark>
+		</Placemark>
+		<Placemark>
+			<name>Template</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-122.3455065183996,48.75758088291246,0 -122.3453073215332,48.75672487541345,0 -122.3434903784696,48.75657173083575,0 -122.3444245107984,48.75728125589155,0 -122.3455065183996,48.75758088291246,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
 </kml>
