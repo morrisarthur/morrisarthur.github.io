@@ -124,8 +124,8 @@ map = new google.maps.Map(document.getElementById('map_canvas'), {
 map.setTilt(0);
 
 // Get URL parameter
-alert('lat' + getAllUrlParams().lat);
-alert('lon'+ getAllUrlParams().lon);
+//alert('lat' + getAllUrlParams().lat);
+//alert('lon'+ getAllUrlParams().lon);
 pLat = parseFloat(getAllUrlParams().lat);
 pLon = parseFloat(getAllUrlParams().lon);
 pSiteDesc = decodeURIComponent(getAllUrlParams().d);
@@ -140,7 +140,7 @@ pSiteDesc = decodeURIComponent(getAllUrlParams().d);
   var ctaLayer = new google.maps.KmlLayer({
 //    url: 'https://github.com/morrisarthur/morrisarthur.github.io/blob/4a03254bb1aee6c3ec7afc037778ed4920bff107/tp.kml',
 //    url: 'https://googlearchive.github.io/js-v2-samples/ggeoxml/cta.kml',
-    url: 'https://morrisarthur.github.io/tp.kml',
+    url: 'https://morrisarthur.github.io/tp2.kml',
 	suppressInfoWindows: false,
     preserveViewport: true,
     map: map
