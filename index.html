@@ -124,12 +124,13 @@ map = new google.maps.Map(document.getElementById('map_canvas'), {
 map.setTilt(0);
 
 // Get URL parameter
+alert('lat' + getAllUrlParams().lat);
+alert('lon'+ getAllUrlParams().lon);
 pLat = parseFloat(getAllUrlParams().lat);
 pLon = parseFloat(getAllUrlParams().lon);
 pSiteDesc = decodeURIComponent(getAllUrlParams().d);
 
-alert('lat' + pLat);
-alert('lon'+ pLon);
+
 
 //alert('pre');
 
