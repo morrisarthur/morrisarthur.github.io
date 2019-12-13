@@ -369,8 +369,8 @@ function getAllUrlParams(url) {
 var sloc = queryString.indexOf("lat=");
 var ploc = queryString.indexOf("&lon=");
 var dloc = queryString.indexOf("&d=");
-	obj['lat'] = queryString.substring(sloc+2,ploc);
-	obj['lon'] = queryString.substring(ploc+3,dloc);
+	obj['lat'] = queryString.substring(sloc+4,ploc);
+	obj['lon'] = queryString.substring(ploc+5,dloc);
 	obj['d'] = queryString.substring(dloc+3);
 
 
