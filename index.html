@@ -128,8 +128,8 @@ pLat = parseFloat(getAllUrlParams().lat);
 pLon = parseFloat(getAllUrlParams().lon);
 pSiteDesc = decodeURIComponent(getAllUrlParams().d);
 
-alert('s' + pSiteID);
-alert('p'+ pP12);
+alert('lat' + pLat);
+alert('lon'+ pLon);
 
 //alert('pre');
 
@@ -150,7 +150,7 @@ alert('p'+ pP12);
 
 //console.log("p" + pP12 + "p");
 if (1 == 1 ) { ///Called without P12 parameter
-		var latlng = new google.maps.LatLng(pSiteID,pP12);
+		var latlng = new google.maps.LatLng(pLat,pLon);
 
 		map.setCenter(latlng);
 //		new google.maps.Marker({position: {lat: -34, lng: 151}, map: map}); 
