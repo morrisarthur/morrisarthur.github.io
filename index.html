@@ -89,8 +89,8 @@ var watchID;
 var geoLoc;
 var pevent;
 var pfeature;
-var pSiteID;
-var pP12;
+var pLat;
+var pLon;
 var pSiteDesc;
 var listenerAddFeature;
 var myLatLng = new google.maps.LatLng(0.0, 0.0);
@@ -124,8 +124,8 @@ map = new google.maps.Map(document.getElementById('map_canvas'), {
 map.setTilt(0);
 
 // Get URL parameter
-pP12 = parseFloat(getAllUrlParams().p);
-pSiteID = parseFloat(getAllUrlParams().s);
+pLat = parseFloat(getAllUrlParams().lat);
+pLon = parseFloat(getAllUrlParams().lon);
 pSiteDesc = decodeURIComponent(getAllUrlParams().d);
 
 alert('s' + pSiteID);
@@ -366,11 +366,11 @@ function getAllUrlParams(url) {
   // get query string from url (optional) or window
   var obj = {};
   var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
-var sloc = queryString.indexOf("s=");
-var ploc = queryString.indexOf("&p=");
+var sloc = queryString.indexOf("lat=");
+var ploc = queryString.indexOf("&lon=");
 var dloc = queryString.indexOf("&d=");
-	obj['s'] = queryString.substring(sloc+2,ploc);
-	obj['p'] = queryString.substring(ploc+3,dloc);
+	obj['lat'] = queryString.substring(sloc+2,ploc);
+	obj['lon'] = queryString.substring(ploc+3,dloc);
 	obj['d'] = queryString.substring(dloc+3);
 
 
